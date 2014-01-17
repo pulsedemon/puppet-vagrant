@@ -1,0 +1,47 @@
+{
+  "name": "Aethylred-postfix",
+  "version": "0.1.1",
+  "source": "https://github.com/Aethylred/puppet-postfix",
+  "author": "Aethylred",
+  "license": "GPL 3",
+  "summary": "A Puppet module for installing and configuring the postfix message transfer agent.",
+  "description": "This Puppet Module installs and configures the postfix message transfer agent.\n\nInitially this will be a trivial install that set's up postfix as a relay agent.",
+  "project_page": "https://github.com/Aethylred/puppet-postfix",
+  "dependencies": [
+    {
+      "name": "puppetlabs/stdlib",
+      "version_requirement": "4.1.0"
+    }
+  ],
+  "types": [
+
+  ],
+  "checksums": {
+    "CONTRIBUTING.md": "7f4d4fec0fc277a9e84f9f5f2c1ad9cf",
+    "Gemfile": "72a64fc4a4feb3965ed4d150d7aa0a14",
+    "Modulefile": "da727b56d18250b5426d136c7c66aaf3",
+    "README.markdown": "e10bfbfa60984e78231a713da77b09fd",
+    "Rakefile": "1b993ffca767367238f89da0f570e53b",
+    "Vagrantfile": "2e88db5446954c9aaf7a539ca5b00650",
+    "arch.sh": "2dbaf789e33fbe06e35bd75d5fec7b3d",
+    "centos_5_x.sh": "bdbbf3a742db1d171133ed1c431cfcec",
+    "centos_6_x.sh": "ee1b2b3f1ed416e58cb6aab4826670ac",
+    "gpl.txt": "bf5c8686e8caf36392c2b5c669795be6",
+    "mac_os_x.sh": "7e2b1ae1691dbe6c9588b0270f56a72a",
+    "manifests/init.pp": "9413d239eb9f3dbd503716ba977e635f",
+    "manifests/params.pp": "337ef82f90b08328eacec2415f214174",
+    "puppet-bootstrap.README.md": "7199232881b3093581d87fe5fe96025b",
+    "spec/classes/postfix_spec.rb": "9eca338ebdd168012933283440ce3dee",
+    "spec/fixtures/augeas/etc/postfix/main.cf": "49b648101b0e361231a977aa89e0dd60",
+    "spec/fixtures/augeas/etc/postfix/main.modified.cf": "0c04d78cf729423785975a8c33122752",
+    "spec/spec.opts": "eb547b31184006017b3f6d6e2f1bbc12",
+    "spec/spec_helper.rb": "f93c9ec19e6371c224c426d24c15ec28",
+    "tests/init.pp": "f230ca1831e0d8e0582c561f63e8e222",
+    "tests/remove_sendmail.pp": "6ed31b05957f0a15d476c31cb62436c5",
+    "tests/set_myorigin.pp": "23f5f3bf480d651877647c05a28719c7",
+    "tests/set_relayhost.pp": "8decc65dc2604f4da3edc8c932311138",
+    "tests/set_relayport.pp": "0e595ad927dd6913bf7265d24f66e847",
+    "ubuntu.sh": "760235ca382d062d34e64e5c2fd0a6ea",
+    "windows.ps1": "d380d737da2ca1cf3ea61de61068cf42"
+  }
+}

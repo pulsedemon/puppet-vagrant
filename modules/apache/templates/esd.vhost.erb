@@ -1,0 +1,23 @@
+# File managed by Puppet
+
+<VirtualHost *:80>
+  ServerAdmin webmaster@localhost
+  ServerName esd.dev
+
+  DocumentRoot /var/www/other/esd_static/static
+  <Directory /var/www/other/esd_static/static>
+    Options Indexes FollowSymLinks MultiViews
+    AllowOverride None
+    Order allow,deny
+    allow from all
+  </Directory>
+
+  ErrorLog ${APACHE_LOG_DIR}/error-esd.dev.log
+
+  # Possible values include: debug, info, notice, warn, error, crit,
+  # alert, emerg.
+  LogLevel warn
+
+  CustomLog ${APACHE_LOG_DIR}/access-esd.dev.log combined
+
+</VirtualHost>
