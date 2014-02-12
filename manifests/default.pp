@@ -7,9 +7,18 @@ class vim {
 class php {
   package { "php5":
     ensure => present,
+    require  => Exec['apt-get update'],
   }
 
   package { "php5-cli":
+    ensure => present,
+  }
+
+  package { "php5-mysql":
+    ensure => present,
+  }
+
+  package { "libapache2-mod-php5":
     ensure => present,
   }
 }
@@ -17,9 +26,10 @@ class php {
 class mysql {
   package { "mysql-server":
     ensure => present,
+    require  => Exec['apt-get update'],
   }
 
-  package { "php5-mysql":
+  package { "mysql-client":
     ensure => present,
     require => Package['mysql-server']
   }
@@ -29,13 +39,6 @@ class capistrano {
   package { 'capistrano':
     ensure   => 'installed',
     provider => 'gem',
-  }
-}
-
-class python {
-  package { "python2.7":
-    ensure  => latest,
-    require  => Exec['apt-get update'],
   }
 }
 
@@ -52,6 +55,13 @@ class apache::vagrant {
 
   apache::module { ["rewrite", "headers"]:
     ensure => present,
+  }
+}
+
+class python {
+  package { "python2.7":
+    ensure  => latest,
+    require  => Exec['apt-get update'],
   }
 }
 
